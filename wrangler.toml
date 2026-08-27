@@ -1,0 +1,25 @@
+"$schema" = "./node_modules/wrangler/config-schema.json"
+name = "my-worker"
+main = "src/index.js"
+# Set this to today's date
+compatibility_date = "2026-08-28"
+workers_dev = true
+
+[route]
+pattern = "jingpay.site/*"
+zone_name = "jingpay.site"
+
+[[kv_namespaces]]
+binding = "<MY_NAMESPACE>"
+id = "<KV_ID>"
+
+[env.staging]
+name = "my-worker-staging"
+
+  [env.staging.route]
+  pattern = "staging.jingpay.site/*"
+  zone_name = "jingpay.site"
+
+  [[env.staging.kv_namespaces]]
+  binding = "<MY_NAMESPACE>"
+  id = "<STAGING_KV_ID>"
