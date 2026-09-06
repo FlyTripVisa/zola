@@ -1,13 +1,13 @@
 "$schema" = "./node_modules/wrangler/config-schema.json"
-name = "zola"
+name = "flytrip"
 main = "src/index.js"
 # Set this to today's date
-compatibility_date = "2026-08-28"
+compatibility_date = "2026-09-06"
 workers_dev = true
 
 [route]
-pattern = "jingpay.site/*"
-zone_name = "jingpay.site"
+pattern = "chat.flytripvisa.site/*"
+zone_name = "chat.flytripvisa.site"
 
 [[kv_namespaces]]
 binding = "<MY_NAMESPACE>"
@@ -17,8 +17,8 @@ id = "<KV_ID>"
 name = "my-worker-staging"
 
   [env.staging.route]
-  pattern = "staging.jingpay.site/*"
-  zone_name = "jingpay.site"
+  pattern = "staging.flytripvisa.site/*"
+  zone_name = "chat.flytripvisa.site"
 
   [[env.staging.kv_namespaces]]
   binding = "<MY_NAMESPACE>"
