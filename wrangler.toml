@@ -1,4 +1,4 @@
-"$schema" = "./node_modules/wrangler/config-schema.json"
+"# wrangler.toml
 name = 'ai-robot-flytrip'
 main = "src/index.js"
 # Set this to today's date
