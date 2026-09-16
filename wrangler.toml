@@ -1,8 +1,8 @@
 "$schema" = "./node_modules/wrangler/config-schema.json"
-name = "flytrip"
+name = 'ai-robot-flytrip'
 main = "src/index.js"
 # Set this to today's date
-compatibility_date = "2026-09-06"
+compatibility_date = "2026-09-16"
 workers_dev = true
 
 [route]
