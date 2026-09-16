@@ -1,24 +1,4 @@
-"name = 'ai-robot-flytrip'
+name = 'ai-robot-flytrip'
 main = "src/index.js"
-# Set this to today's date
 compatibility_date = "2026-09-16"
 workers_dev = true
-
-[route]
-pattern = "chat.flytripvisa.site/*"
-zone_name = "chat.flytripvisa.site"
-
-[[kv_namespaces]]
-binding = "<MY_NAMESPACE>"
-id = "<KV_ID>"
-
-[env.staging]
-name = "my-worker-staging"
-
-  [env.staging.route]
-  pattern = "staging.flytripvisa.site/*"
-  zone_name = "chat.flytripvisa.site"
-
-  [[env.staging.kv_namespaces]]
-  binding = "<MY_NAMESPACE>"
-  id = "<STAGING_KV_ID>"
