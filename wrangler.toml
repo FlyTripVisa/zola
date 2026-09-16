@@ -1,5 +1,4 @@
-"# wrangler.toml
-name = 'ai-robot-flytrip'
+"name = 'ai-robot-flytrip'
 main = "src/index.js"
 # Set this to today's date
 compatibility_date = "2026-09-16"
